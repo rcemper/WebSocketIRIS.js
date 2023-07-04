@@ -1,10 +1,6 @@
 zn "%SYS"
 Do ##class(Security.Users).UnExpireUserPasswords("*")
-set ds("DeepSeeEnabled")=1
-set sc=##class(Security.Applications).Modify("/csp/user/",.ds)
 zn "USER"
 zpm "install webterminal"
 zpm "load /opt/irisbuild/ -v":1
-zpm "oex-mapping test -v"
-set sc=##class(%DeepSee.Utils).%BuildCube("oex")
 halt
