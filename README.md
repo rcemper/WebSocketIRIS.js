@@ -31,9 +31,9 @@ and from echo server you get back a Global as output
 written by Node.js using the Native API for Node.js   
 
 zwrite ^ZSockOut   
-^ZSocketOut="wss://ws.postman-echo.com/"
+^ZSocketOut="wss://ws.postman-echo.com/"    
 ^ZZSockOut(0)=6   
-^ZSockOut(1)="Hello"
+^ZSockOut(1)="Hello"   
 ^ZSockOut(2)="World !"    
 ^ZSockOut(3)="Robert"     
 ^ZSockOut(4)="is waiting"     
@@ -43,10 +43,9 @@ zwrite ^ZSockOut
 ### Local installation and operation
 The WebSocket Service is started from OS command line.   
 You can follow the progress in console output    
-
-````   
-C:\Program Files\nodejs\cache>node WebSocketIRIS.js
-
+    
+C:\Program Files\nodejs\cache>node WebSocketIRIS.js   
+````
         *****************************
         **** no IRIS host defined ****
         Connect to IRIS on: localhost
@@ -119,9 +118,8 @@ Now activate your Node.js client
 Have the external IP address and the SuperServerPort ready  !   
 default: localhost:1972 is just a placeholder    
 
+*docker-compose exec wsock nodejs WebSocketIRIS.js <ip-adr>:<port>*    
 ````
-docker-compose exec wsock nodejs WebSocketIRIS.js <ip-adr>:<port>    
-
 platform = linux: ubuntu: x64   
         *****************************    
         Connect to IRIS on: 192.168.0.9:57771    
