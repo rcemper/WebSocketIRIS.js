@@ -19,19 +19,17 @@ set ^ZSockIn(3)="Robert"
 set ^ZSockIn(4)="is waiting"  
 set ^ZSockIn(5)="for replies" 
 set ^ZSockIn(6)="exit"  
-
-The server is controlled by ^ZSocketRun from IRIS 
-
-````
+   
+The server is controlled by ^ZSocketRun from IRIS   
+   
 set ^ZSocketRun(0)="wss://ws.postman-echo.com/raw"  ;echo server   
 set ^ZSocketRun=1   ; => send to echo server   
 ;    -1 => stop server and exit  
-;     0 => wait for action  
-````
+;     0 => wait for action   
+    
 and from echo server you get back a Global as output    
 written by Node.js using the Native API for Node.js   
 
-````
 zwrite ^ZSockOut
      ^ZSocketOut="wss://ws.postman-echo.com/"
      ^ZZSockOut(0)=6
@@ -41,9 +39,8 @@ zwrite ^ZSockOut
      ^ZSockOut(4)="is waiting"
      ^ZSockOut(5)="for replies"
      ^ZSockOut(6)="exit"
-````
 
-### local installation and operation
+### Local installation and operation
 The WebSocket Service is started from OS command line.   
 You can follow the progress in console output    
 
