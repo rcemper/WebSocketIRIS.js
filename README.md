@@ -30,15 +30,15 @@ set ^ZSocketRun=1   ; => send to echo server
 and from echo server you get back a Global as output    
 written by Node.js using the Native API for Node.js   
 
-zwrite ^ZSockOut
-     ^ZSocketOut="wss://ws.postman-echo.com/"
-     ^ZZSockOut(0)=6
-     ^ZSockOut(1)="Hello"
-     ^ZSockOut(2)="World !"
-     ^ZSockOut(3)="Robert"
-     ^ZSockOut(4)="is waiting"
-     ^ZSockOut(5)="for replies"
-     ^ZSockOut(6)="exit"
+zwrite ^ZSockOut   
+^ZSocketOut="wss://ws.postman-echo.com/"
+^ZZSockOut(0)=6   
+^ZSockOut(1)="Hello"
+^ZSockOut(2)="World !"    
+^ZSockOut(3)="Robert"     
+^ZSockOut(4)="is waiting"     
+^ZSockOut(5)="for replies"     
+^ZSockOut(6)="exit"    
 
 ### Local installation and operation
 The WebSocket Service is started from OS command line.   
