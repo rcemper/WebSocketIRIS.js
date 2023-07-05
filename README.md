@@ -28,7 +28,7 @@ set ^ZSocketRun=1   ; => send to echo server
 ;     0 => wait for action  
 ````
 and from echo server you get back a Global as output  
-written by Node.js using the Native API for Node.js
+written by Node.js using the Native API for Node.js  
 ````
 zwrite ^ZSockOut
      ^ZSocketOut="wss://ws.postman-echo.com/"
@@ -54,7 +54,6 @@ You can follow the progress in console output
         ** Lines to process: 6 **
         ********* next turn *********
         ******* Startup done ********
-
         * WebSocket Client connected *
         ****** Client is ready ******
     Line: 1 text> 'Hello'
@@ -98,6 +97,7 @@ Open the terminal in this directory, build and run the container:
 ````
  docker-compose up -d
 ````
+
 Next open a IRIS session in namespace USER and prepare the Globals for testing   
 a test program **ZSocket.MAC** is in subdirectory **src** of download
 ````
@@ -117,7 +117,6 @@ Have the external IP address and the SuperServerPort ready  !
 default: localhost:1972 is just a placeholder    
 ````
 docker-compose exec wsock nodejs WebSocketIRIS.js <ip-adr>:<port>
-
 platform = linux: ubuntu: x64
 
         *****************************
@@ -128,4 +127,3 @@ Successfully connected to InterSystems IRIS.
         ********* next turn *********
         ******* Startup done ********  
 ````
-
