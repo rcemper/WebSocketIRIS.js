@@ -10,8 +10,9 @@ Client for WebSocket Servers and to collect the replies in IRIS.
 I used node-v10.15.1-x64.msi and intersystems-iris-native package     
 
 ### How it works   
-You provide a Global for input in namespace USER (default)    
-````  
+You provide a Global for input in namespace USER (default)   
+
+````
 set ^ZSockIn(0)=6  
 set ^ZSockIn(1)="Hello"  
 set ^ZSockIn(2)="World !" 
@@ -19,10 +20,10 @@ set ^ZSockIn(3)="Robert"
 set ^ZSockIn(4)="is waiting"  
 set ^ZSockIn(5)="for replies" 
 set ^ZSockIn(6)="exit"  
-```` 
-the server is controlled by ^ZSocketRun from IRIS 
+````
+The server is controlled by ^ZSocketRun from IRIS 
 
-```` 
+````
 set ^ZSocketRun(0)="wss://ws.postman-echo.com/raw"  ;echo server   
 set ^ZSocketRun=1   ; => send to echo server   
 ;    -1 => stop server and exit  
@@ -30,6 +31,7 @@ set ^ZSocketRun=1   ; => send to echo server
 ````
 and from echo server you get back a Global as output    
 written by Node.js using the Native API for Node.js   
+
 ````
 zwrite ^ZSockOut
      ^ZSocketOut="wss://ws.postman-echo.com/"
