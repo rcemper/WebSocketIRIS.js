@@ -74,6 +74,8 @@ Now activate your Node.js client
 Have the external IP address and the SuperServerPort ready  !   
 default: localhost:1972 is just a placeholder    
 
-*docker-compose exec wsock nodejs WebSocketIRIS.js <ip-adr>:<port>*    
+*docker-compose exec wsock nodejs WebSocketIRIS.js <ip-adr>:<port>*  
 
-![image](https://github.com/rcemper/WebSocketIRIS.js/assets/31236645/964674f2-65bb-4dd3-89dc-427e875829b5)
+![image](https://github.com/rcemper/WebSocketIRIS.js/assets/31236645/97836bfb-dc65-4352-b47c-37753a8f53f4)
+
+
