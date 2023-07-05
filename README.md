@@ -49,13 +49,13 @@ You can follow the progress in console output
       C:\Program Files\nodejs\cache>node WebSocketIRIS.js
 
         *****************************
-        *** no IRIS host defined ****
+        **** no IRIS host defined ****
         Connect to IRIS on: localhost
     Successfully connected to InterSystems IRIS.
         echoserver:  wss://ws.postman-echo.com/
         ** Lines to process: 6 **
-        ********* next turn *********
-        ******* Startup done ********
+        ********** next turn **********
+        ******** Startup done ********
         * WebSocket Client connected *
         ****** Client is ready ******
     Line: 1 text> 'Hello'
@@ -72,8 +72,8 @@ You can follow the progress in console output
     Line: 6 text> 'exit'
     Received: 6 > 'exit'
 
-        ******* lines sent: 6 ******
-        *** replies received: 6 ****
+        ****** lines sent: 6 ******
+        *** replies received: 6 ***
 
         *** wait 3sec for request ***
         *** wait 3sec for request ***
@@ -82,7 +82,7 @@ You can follow the progress in console output
         *** wait 3sec for request ***
         *** wait 3sec for request ***
         *** Client Service closed ***
-````
+```` 
 
 [Comment in DC](https://community.intersystems.com/post/client-websockets-based-nodejs#comment-128726)
 
