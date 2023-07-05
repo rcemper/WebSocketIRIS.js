@@ -1,22 +1,10 @@
 version: '3.6'
 services:
-  wsock:
+  nodejs:
     build: 
-      context: nodes
-      dockerfile: DockerfileN
+      context: ./nodejs
+      dockerfile: DockerfileJS
     restart: always
     volumes:
-      - ./:/external/
+      - ./nodejs/:/external  
     entrypoint: ["/bin/bash","-c","/external/init.sh"]
-  iris:
-    build: 
-      context: .
-      dockerfile: Dockerfile
-    command: --ISCAgent false
-    restart: always
-    ports:
-      - '51773:1972'
-      - '52773:52773'
-      - 53773
-    volumes:
-      - ./:/rcc
