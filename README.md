@@ -116,14 +116,14 @@ Now activate your Node.js client
 Have the external IP address and the SuperServerPort ready  !   
 default: localhost:1972 is just a placeholder    
 ````
-docker-compose exec wsock nodejs WebSocketIRIS.js <ip-adr>:<port>
-platform = linux: ubuntu: x64
-
-        *****************************
-        Connect to IRIS on: 192.168.0.9:57771
-Successfully connected to InterSystems IRIS.
-        echoserver:  wss://ws.postman-echo.com/
-        ** Lines to process: 6 **
-        ********* next turn *********
-        ******* Startup done ********  
+docker-compose exec wsock nodejs WebSocketIRIS.js <ip-adr>:<port>    
+platform = linux: ubuntu: x64   
+        *****************************    
+        Connect to IRIS on: 192.168.0.9:57771    
+Successfully connected to InterSystems IRIS.    
+        echoserver:  wss://ws.postman-echo.com/    
+        ** Lines to process: 6 **   
+        ********* next turn *********   
+        ******* Startup done ********   
 ````
+--
