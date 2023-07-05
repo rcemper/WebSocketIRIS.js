@@ -68,31 +68,12 @@ Open the terminal in this directory, build and run the container:
 Next open a IRIS session in namespace USER and prepare the Globals for testing   
 a test program **ZSocket.MAC** is in subdirectory **src** of download directory    
 
-````  
-set ^ZSockIn(0)=6
-set ^ZSockIn(1)="Hello"
-set ^ZSockIn(2)="World !"
-set ^ZSockIn(3)="Robert"
-set ^ZSockIn(4)="is waiting"
-set ^ZSockIn(5)="for replies"
-set ^ZSockIn(6)="exit"
-set ^ZSocketRun(0)="wss://ws.postman-echo.com/"  ;echo server
-set ^ZSocketRun=1   ; => send to echo server 
-````
+![image](https://github.com/rcemper/WebSocketIRIS.js/assets/31236645/87032767-8b47-442b-8a19-84ed8b0e0fa2)   
 
 Now activate your Node.js client  
 Have the external IP address and the SuperServerPort ready  !   
 default: localhost:1972 is just a placeholder    
 
 *docker-compose exec wsock nodejs WebSocketIRIS.js <ip-adr>:<port>*    
-````
-platform = linux: ubuntu: x64   
-        *****************************    
-        Connect to IRIS on: 192.168.0.9:57771    
-Successfully connected to InterSystems IRIS.    
-        echoserver:  wss://ws.postman-echo.com/    
-        ** Lines to process: 6 **   
-        ********* next turn *********  
-        ******* Startup done *******    
-````  
 
+![image](https://github.com/rcemper/WebSocketIRIS.js/assets/31236645/964674f2-65bb-4dd3-89dc-427e875829b5)
