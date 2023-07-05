@@ -2,14 +2,12 @@
 <Export generator="Cache" version="25">
   <Document name="oex-mapping.ZPM">
     <Module>
-      <Name>oex-mapping</Name>
-      <Description>extract info from OEX</Description> 
-      <Version>0.0.3</Version>
+      <Name>wsocket-iris/Name>
+      <Description>tetsing wsock-js-iris</Description> 
+      <Version>2.0.0</Version>
       <Packaging>module</Packaging>
-      <SourcesRoot>src</SourcesRoot>
-      <Resource Name="oex.PKG"/>
-      <Resource Name="oex.GBL"/>
-      <UnitTest Name="/src" Package="UnitTests" Phase="test"/>	    
+      <SourcesRoot>src</SourcesRoot> 
+      <Resource Name="Wsocket.MAC"/>
     </Module>
   </Document>
 </Export>
