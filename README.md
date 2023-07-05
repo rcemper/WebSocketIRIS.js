@@ -44,43 +44,8 @@ zwrite ^ZSockOut
 The WebSocket Service is started from OS command line.   
 You can follow the progress in console output    
     
-C:\Program Files\nodejs\cache>node WebSocketIRIS.js     
-````
-      *****************************
-        **** no IRIS host defined ****
-        Connect to IRIS on: localhost
-    Successfully connected to InterSystems IRIS.
-        echoserver:  wss://ws.postman-echo.com/
-        ** Lines to process: 6 **
-        ********** next turn **********
-        ******** Startup done ********
-        * WebSocket Client connected *
-        ****** Client is ready ******
-    Line: 1 text> "Hello"
-    Received: 1 > "Hello"
-    Line: 2 text> "World !"
-    Received: 2 > "World !"
-    Line: 3 text> "Robert"
-    Received: 3 > "Robert"
-    Line: 4 text> "is waiting"
-    Received: 4 > "is waiting"
-    Line: 5 text> "for replies"
-    Received: 5 > "for replies"
-        *** wait 3sec for request ***
-    Line: 6 text> "exit"
-    Received: 6 > "exit"
-
-        ****** lines sent: 6 ******
-        *** replies received: 6 ***
-
-        *** wait 3sec for request ***
-        *** wait 3sec for request ***
-        *** wait 3sec for request ***
-        *** wait 3sec for request ***
-        *** wait 3sec for request ***
-        *** wait 3sec for request ***
-        *** Client Service closed ***
-````
+*C:\Program Files\nodejs\cache>node WebSocketIRIS.js*     
+ 
 ![image](https://github.com/rcemper/WebSocketIRIS.js/assets/31236645/7791b075-4474-4649-bb3b-de7db1f7fff0)
 
 [Comment in DC](https://community.intersystems.com/post/client-websockets-based-nodejs#comment-128726)
