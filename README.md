@@ -45,8 +45,8 @@ zwrite ^ZSockOut
 The WebSocket Service is started from OS command line.   
 You can follow the progress in console output    
 
-````
-      C:\Program Files\nodejs\cache>node WebSocketIRIS.js
+````   
+C:\Program Files\nodejs\cache>node WebSocketIRIS.js
 
         *****************************
         **** no IRIS host defined ****
@@ -82,7 +82,7 @@ You can follow the progress in console output
         *** wait 3sec for request ***
         *** wait 3sec for request ***
         *** Client Service closed ***
-```` 
+````   
 
 [Comment in DC](https://community.intersystems.com/post/client-websockets-based-nodejs#comment-128726)
 
