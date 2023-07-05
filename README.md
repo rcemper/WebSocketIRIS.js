@@ -12,14 +12,14 @@ I used node-v10.15.1-x64.msi and intersystems-iris-native package
 ### How it works   
 You provide a Global for input in namespace USER (default)    
 ````  
- set ^ZSockIn(0)=6  
- set ^ZSockIn(1)="Hello"  
- set ^ZSockIn(2)="World !" 
- set ^ZSockIn(3)="Robert"  
- set ^ZSockIn(4)="is waiting"  
- set ^ZSockIn(5)="for replies" 
- set ^ZSockIn(6)="exit"  
-````
+set ^ZSockIn(0)=6  
+set ^ZSockIn(1)="Hello"  
+set ^ZSockIn(2)="World !" 
+set ^ZSockIn(3)="Robert"  
+set ^ZSockIn(4)="is waiting"  
+set ^ZSockIn(5)="for replies" 
+set ^ZSockIn(6)="exit"  
+```` 
 the server is controlled by ^ZSocketRun from IRIS 
 
 ```` 
